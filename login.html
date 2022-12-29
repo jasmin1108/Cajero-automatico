@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Móvil</title>
+
+    <link
+    rel="stylesheet"
+    href="./css/sstyle.css"/>
+    
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="30x30"
+    href="./imagenes/foto.png"
+/>
+</head>
+
+<body>
+    <main class="login-wrapper">
+        <div id="login-principal">
+            <div class="nombre">
+            <img src="./imagenes/foto.png"/>
+            <h1>Banco <br>Móvil</h1>
+            </div>
+        <strong id="error-login"class="alert-danger hidden"></strong>
+        <form id="login">
+            <input name="loginEmail"  placeholder="Ingresa el email de tu cuenta" autocomplete="new-username"/>
+            <input name="loginPassword" placeholder="Ingresa tu clave" Type="password" autocomplete="new-password"/>
+            <button type="submit">Ingresar</button>
+        </form>
+        
+    </div>
+    </main>
+    
+    <script src="./js/login.js" type="module"></script>
+</body>
+</html>

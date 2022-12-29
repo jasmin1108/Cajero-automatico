@@ -1,0 +1,87 @@
+@import url(./login.css);
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+:root {
+  background-image: linear-gradient(-60deg, #df1616 0%, #fa9506 100%); 
+}
+
+body {
+    background-color: var(--naranja);
+    color: rgb(29, 27, 27);
+    height: 100vh;
+}
+input {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.error {
+    font-weight: 900;
+    color: rgb(31, 2, 2);
+    padding: 4px;
+    font-size: 19px;
+}
+
+.hidden{
+    visibility: hidden;
+} 
+#login-principal {
+  background-color: rgb(255, 255, 255);
+  padding: 45px;
+  margin: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 15px 15px  rgba(0, 0, 0, 0.785);
+}
+
+

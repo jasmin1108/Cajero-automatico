@@ -1,0 +1,227 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(-60deg, #df1616 0%, #fa9506 100%);
+    color: rgb(0, 0, 0); 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+
+#principal {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 35% ;
+    box-sizing: border-box;
+    flex-direction: column; 
+    align-items:center;
+}
+
+.principal-tarjeta {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+}
+.principal-tarjeta img {
+    width: 75px;
+    height: 75px; 
+    border-radius: 5px;
+}
+.tarjeta_1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.tarjeta_1 p {
+    font-size: 17px;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}  
+.card-button {
+    display: flex;
+    align-items: center; 
+    flex-direction: column; 
+    flex-wrap: nowrap;
+}
+
+.card-button button {
+    border: transparent;
+    cursor: pointer;
+    width: 250px;
+    height: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 15px 15px  rgba(45, 42, 42, 0.785);
+    background-color: rgba(133, 62, 177, 0.887); 
+    
+} 
+
+#modal {
+    position: fixed;
+    min-height: 270px;
+    min-width: 350px;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #E4E4E1;
+    background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255, 245, 245, 0.1) 0%, rgba(166, 194, 209, 0.6) 100%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    z-index: 100;
+    color: black;
+    text-align: center;
+}
+
+#modal div {
+    display: flex;
+    flex-direction: column;
+}
+#modal h5 {
+    margin-bottom: 50px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+#modal span {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background-image: linear-gradient(-60deg, #f80505 0%, #ff9807 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(245, 235, 235);
+
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    visibility: hidden;
+} 
+
+#titulo-modal {
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#contenido {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+input{
+    min-width: 100px;
+    height: 30px;
+    border: 4px solid transparent;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-bottom: 3%;
+}
+
+
+.button-submit  {
+    background-color:  rgba(133, 62, 177, 0.887);
+    border: 2px solid transparent;
+    font-size: 1.2rem;
+    font-weight: 600; 
+    border-radius: 5px;
+    cursor: pointer;
+    padding-right: 10px;
+    min-width: auto;
+}
+.button-submit:hover {
+    background-color: #650673;
+}
+
+#error {
+    font-weight: 500;
+
+    font-size: 13px;
+}
+.alert-danger {
+    background-image: linear-gradient(-20deg, #f80c2b 0%, #ff9a44 100%);
+    color: black;
+}
+.alert-info {
+    background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    color: black;
+}
+
+@media screen and (max-width:480px ){
+    #principal {
+        flex-direction:column;
+        justify-content: center;
+        margin-bottom: auto;
+        width: 100%;
+    }
+    .principal-tarjeta{
+       margin-right: 80px;
+         
+    }
+    .tarjeta_1 {
+        margin-right: 0px;
+        margin-left: 50px;
+    }
+    #tarjeta_2 {
+        flex-direction: column;
+        justify-content:center;
+    }
+    .card-button {
+        height: 150px; 
+        flex-wrap:nowrap;
+        align-items: center;
+        margin:0px ;
+        justify-content:center;
+
+    }
+    #modal {
+        position: fixed;
+        min-height: 150px;
+        min-width: 200px;
+        top: 59%;
+        left: 50%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #modal span {
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        width: 25px;
+        height: 25px;
+        border-radius: 999px;
+    }
+    input{
+        min-width: 10px;
+        height: 40px;
+    }
+    #error{
+        font-weight: 200;
+        font-size: 16px;
+    }
+}
+
