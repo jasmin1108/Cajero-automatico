@@ -79,7 +79,7 @@ input {
 #login-principal {
   background-color: rgb(255, 255, 255);
   padding: 45px;
-  margin: 15px;
+  /* margin: 15px; */
   border-radius: 8px;
   box-shadow: 0px 15px 15px  rgba(0, 0, 0, 0.785);
 }
